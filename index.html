@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lua VR</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sky src="stars.jpg"></a-sky>
+
+        <a-entity geometry="primitive: sphere; radius: 15" 
+                  material="src: moon.jpg" 
+                  position="0 -15 0"
+                  scale="1 0.1 1">
+        </a-entity>
+
+        <a-light type="ambient" color="#888"></a-light>
+        <a-light type="directional" position="1 1 1" intensity="0.5"></a-light>
+
+        <a-entity geometry="primitive: sphere; radius: 10" 
+                  material="src: earth.jpg" 
+                  position="30 0 -50"
+                  rotation="0 150 0">
+        </a-entity>
+
+        <a-entity position="0 1.6 0">
+            <a-camera></a-camera>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
