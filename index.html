@@ -21,11 +21,53 @@
 
         <a-entity geometry="primitive: sphere; radius: 10" 
                   material="src: earth.jpg" 
-                  position="30 0 -50"
+                  position="30 10 -100"
                   rotation="0 150 0">
         </a-entity>
+        <a-entity geometry="primitive: sphere; radius: 7" 
+        material="src: mars.jpg" 
+        position="70 5 -150"
+        rotation="0 100 0">
+</a-entity>
 
-        <a-entity position="0 1.6 0">
+
+
+<a-entity geometry="primitive: sphere; radius: 30" 
+        material="src: jupiter.jpg" 
+        position="-50 20 -250"
+        rotation="0 200 0">
+</a-entity>
+
+
+<a-entity geometry="primitive: sphere; radius: 25" 
+        material="src: saturn.jpg" 
+        position="90 15 -450"
+        rotation="0 250 0">
+</a-entity>
+
+
+
+<a-entity geometry="primitive: sphere; radius: 18" 
+        material="src: uranus.jpg" 
+        position="-100 10 -450"
+        rotation="0 300 0">
+</a-entity>
+
+
+
+<a-entity geometry="primitive: sphere; radius: 18" 
+        material="src: neptune.jpg" 
+        position="120 5 -600"
+        rotation="0 350 0">
+</a-entity>
+
+
+
+<a-light type="ambient" color="#888"></a-light>
+<a-light type="directional" position="1 1 1" intensity="0.5"></a-light>
+
+
+<a-entity position="0 1.6 0">
             <a-camera></a-camera>
         </a-entity>
     </a-scene>
